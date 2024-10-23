@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height: 7vh;
+    width: 100%;
+    background-color: maroon;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    width: 15rem;
+    height: 18rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 50px;
+    padding-top: 5px;
+}
+.card{
+    height: 100%;
+    width: 100%;
+    
+}
+.img{   
+    width: 95%;
+    height: 70%;
+    background-color: aqua;
+    object-fit: cover;
+    margin: auto;
+}
+
+.add {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.add button {
+    background-color: maroon; 
+    color: white; 
+    font-weight: bold;
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    cursor: pointer; 
+    transition: 0.5s ; 
+}
+
+.add button:hover {
+    background-color: red;
+    transform: scale(1.1);
+    transition: 0.5s;
+}

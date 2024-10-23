@@ -21,7 +21,14 @@ export async function addUser(req,res){
         return res.status(404).send(error)
     }
 }
-
+ export async function getUsers(req,res) {
+    try {
+        const users=userSchema.find();
+        res.status(200).send(users);
+    } catch (error) {
+        res.status(404).send({msg:error});
+    }
+ }
 
 
 
