@@ -15,9 +15,9 @@ const router=Router();
 
 router.route("/upload").post(upload.single('file'),user.addUser)
 router.route("/getusers").get(user.getUsers)
-router.route('/image:filename').get((req,res)=>{
-    let{filename}=req.params;
-    console.log(filename);
+router.route('/image/:filename').get((req,res)=>{
+    let {filename}=req.params;
+    // console.log(filename);
     return res.sendFile(path.resolve(`./uploads/${filename}`))
 })
 

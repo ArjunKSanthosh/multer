@@ -67,7 +67,7 @@
 <body>
     <div class="form-container">
         <h1>Registration Form</h1>
-        <form action="/api/upload" method="post" enctype="multipart/form-data" id="frmyy">
+        <form  id="frmyy">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
@@ -83,23 +83,8 @@
             <button type="submit">Submit</button>
         </form>
     </div>
-<script>
-        document.getElementById("frm").addEventListener("submit",(e)=>{
-            e.preventDefault();
-            const data=new FormData(e.target)
-            fetch("http://localhost:3000/api/upload",{
-                method:"POST",
-                body:data
-            })
-            .then((res)=>{
-                console.log(res);
-                
-            }).catch((error)=>{
-                console.log(error);
-                
-            })
-    
-        })
+<script src="./js/index.js">
+       
 </script>
 </body>
 </html>
