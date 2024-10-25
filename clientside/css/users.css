@@ -12,15 +12,17 @@
     justify-content: center;
 }
 .cards{
-    width: 15rem;
-    height: 18rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 50px;
-    padding-top: 5px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .card{
-    height: 100%;
-    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 15rem;
+    padding: 15px;
+    height: 19rem;
+    margin: 50px;
     
 }
 .card h3,p{
@@ -29,7 +31,11 @@
     padding-top: 10px;
 }
 .card p{
-    font-size: 14px;
+    font-size: 14px;    
+}
+.buts{
+    margin-left:22%;
+    margin-top: 5%;
 }
 .img{   
     width: 95%;
@@ -62,4 +68,17 @@
     background-color: red;
     transform: scale(1.1);
     transition: 0.5s;
+}
+#edit{
+    padding: 5px 15px;
+    background-color: green;
+    color:white;
+    font-weight: bold;
+}
+#delete{
+    padding: 5px 15px;
+    background-color: red;
+    color:white;
+    font-weight: bold;
+
 }
